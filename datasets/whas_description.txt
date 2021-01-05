@@ -10,6 +10,7 @@ hr                Initial Heart Rate              Beats per minute
 sysbp             Initial Systolic Blood Pressure         mmHg               
 diasbp            Initial Diastolic Blood Pressure        mmHg                    
 bmi               Body Mass Index                 kg/m^2
+los	          Length of Hospital Stay         Days between Hospital Discharge and Hospital Admission
 cvd               History of Cardiovascular Disease      0 = No, 1 = Yes                    
 afb               Atrial Fibrillation             0 = No, 1 = Yes
 sho               Cardiogenic Shock               0 = No, 1 = Yes
