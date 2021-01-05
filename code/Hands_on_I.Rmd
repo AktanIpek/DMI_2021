@@ -1,0 +1,66 @@
+---
+title: "Hands_on_sessions_1_2_3"
+author: "Janet Piñero (janet.pinero@upf.edu)"
+date: "Last update: `r format(Sys.time(), '%d %B, %Y')`"      
+output:
+  html_document:
+    toc: true
+    fig_caption: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Pima indians diabetes dataset 
+Load the Pima indians diabetes dataset (Smith et al, 1988) from the mlbench package and
+
+Find the description of the dataset and classify the attributes according to their type
+
+```{r}
+
+```
+
+What is the average age of the people in the study?
+
+```{r}
+
+```
+
+How many cases and controls are there in the study? 
+```{r}
+
+```
+
+Are there missing values in the dataset? 
+
+```{r}
+
+```
+
+
+# 2. Worcester Heart Attack Study 
+Load the dataset of from the Worcester Heart Attack Study (Saczynski et al, 2008) 
+
+What is the average length of stay in the hospital	
+```{r}
+
+```
+
+What is the average length of the follow up?
+
+```{r}
+
+```
+
+
+Plot the distribution of the age by gender. Is there any trend? What is the best way to visualize this?** 
+```{r}
+
+```
+
+# session info {.unnumbered}
+
+```{r, results='asis',  echo=FALSE, message=FALSE }
+sessionInfo()
+```
