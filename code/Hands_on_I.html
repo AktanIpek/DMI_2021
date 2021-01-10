@@ -377,7 +377,7 @@ summary {
 
 <h1 class="title toc-ignore">Hands_on_sessions_1_2_3</h1>
 <h4 class="author">Janet Piñero (<a href="mailto:janet.pinero@upf.edu" class="email">janet.pinero@upf.edu</a>)</h4>
-<h4 class="date">Last update: 05 enero, 2021</h4>
+<h4 class="date">Last update: 08 enero, 2021</h4>
 
 </div>
 
@@ -385,17 +385,27 @@ summary {
 <ul>
 <li><a href="#pima-indians-diabetes-dataset">1. Pima indians diabetes dataset</a></li>
 <li><a href="#worcester-heart-attack-study">2. Worcester Heart Attack Study</a></li>
+<li><a href="#the-heart-disease-dataset">3 the Heart Disease Dataset</a></li>
+<li><a href="#the-hiiragi-et-al-2013-gene-expression-microarray-dataset">4 The Hiiragi et al, 2013 gene expression microarray dataset</a></li>
 <li><a href="#session-info">session info</a></li>
 </ul>
 </div>
 
 <div id="pima-indians-diabetes-dataset" class="section level1">
 <h1>1. Pima indians diabetes dataset</h1>
-<p>Load the Pima indians diabetes dataset (Smith et al, 1988) from the mlbench package and</p>
+<p>Load the Pima indians diabetes dataset (Smith et al, 1988) from the mlbench package.</p>
 <p>Find the description of the dataset and classify the attributes according to their type</p>
 <p>What is the average age of the people in the study?</p>
 <p>How many cases and controls are there in the study?</p>
 <p>Are there missing values in the dataset?</p>
+<p>perform an exploratory data analysis</p>
+<p>Which variables/features include outliers? How did you detected them?</p>
+<p>Perform imputation on missing data. Justify your choices</p>
+<p>From the Pima indians dataset, and visualization hands on, plot using ggplot2: Do not use the colors by default from ggplot2!! Add the plot titles.</p>
+<p>The density plot of Pregnancies Grouped by outcome (in this case, outcome refers to presence of diabetes)</p>
+<p>The density plot of glucose by presence outcome, and next to it, the boxplot of glucose by outcome</p>
+<p>The relationship between glucose and insulin levels colored by outcome</p>
+<p>The relationship between the Skinfold thickness of the triceps and the BMI, using one panel for each outcome</p>
 </div>
 <div id="worcester-heart-attack-study" class="section level1">
 <h1>2. Worcester Heart Attack Study</h1>
@@ -403,6 +413,20 @@ summary {
 <p>What is the average length of stay in the hospital</p>
 <p>What is the average length of the follow up?</p>
 <p>Plot the distribution of the age by gender. Is there any trend? What is the best way to visualize this?**</p>
+</div>
+<div id="the-heart-disease-dataset" class="section level1">
+<h1>3 the Heart Disease Dataset</h1>
+<p>Load the data from <a href="https://raw.githubusercontent.com/jpinero/DMI_2021/main/datasets/heart_disease_dataset.csv">here</a>, and the description is <a href="https://raw.githubusercontent.com/jpinero/DMI_2021/main/datasets/heart_disease_description.txt">here</a> Perform an EDA on the data</p>
+<p>Is this a balanced dataset? Can you do something to solve this?*</p>
+<p>Analyze the dataset and answer which variables seem more predictive of heart disease*</p>
+</div>
+<div id="the-hiiragi-et-al-2013-gene-expression-microarray-dataset" class="section level1">
+<h1>4 The Hiiragi et al, 2013 gene expression microarray dataset</h1>
+<p>From a dataset of a gene expression microarray (an Affymetrix mouse4302 array) that reports the transcriptomes of around 100 individual cells from mouse embryos at different time points in early development, from the paper of Ohnishi et al. (2014). More details can be found in the paper and in the documentation of the Bioconductor data package Hiiragi2013. In the paper the authors divided the cells into 8 biological groups (sampleGroup), based on age, genotype and lineage, and they defined a color scheme to represent these groups (sampleColour).<br />
+Plot the number of samples for each of the 8 groups using the ggplot function, coloring by the original colors</p>
+<p>Plot the relationship between probes X1426642_at, and X1418765_at. Color them by group</p>
+<p>The distribution of of probe intensities for one particular sample, cell number 20, which was from day E3.25 For the probes Fgf4 = “1420085_at”, Gata4 = “1418863_at”, Gata6 = “1425463_at”, and Sox2 = “1416967_at”, plot A barplot of the mean of the expression values across all experiments (* add the error bar to the plot)</p>
+<p>Explore boxplots, violin plots and density plots of the levels of expression of the selected probes across all samples Plot the differences in expression between a wildtype and an FGF4-KO sample. Example, 59 E4.5 (PE) and 92 E4.5 (FGF4-KO)</p>
 </div>
 <div id="session-info" class="section level1 unnumbered">
 <h1 class="unnumbered">session info</h1>
@@ -415,8 +439,8 @@ summary {
 [9] LC_ADDRESS=C LC_TELEPHONE=C<br />
 [11] LC_MEASUREMENT=es_ES.UTF-8 LC_IDENTIFICATION=C</p>
 <p>attached base packages: [1] stats graphics grDevices utils datasets methods base</p>
-<p>loaded via a namespace (and not attached): [1] compiler_3.6.3 magrittr_1.5 tools_3.6.3 htmltools_0.5.0 [5] yaml_2.2.1 stringi_1.4.6 rmarkdown_2.3 knitr_1.29<br />
-[9] stringr_1.4.0 xfun_0.16 digest_0.6.25 rlang_0.4.7<br />
+<p>loaded via a namespace (and not attached): [1] compiler_3.6.3 magrittr_2.0.1 tools_3.6.3 htmltools_0.5.0 [5] yaml_2.2.1 stringi_1.5.3 rmarkdown_2.3 knitr_1.30<br />
+[9] stringr_1.4.0 xfun_0.20 digest_0.6.27 rlang_0.4.10<br />
 [13] evaluate_0.14</p>
 </div>
 
